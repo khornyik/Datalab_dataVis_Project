@@ -25,7 +25,7 @@ let svg_uk = d3.select('#map_uk')
   .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
 // Load and convert topoJSON to geoJSON
-const topoData = await d3.json('data/Scotland_job_map_simplified.topo.json');
+const topoData = await d3.json('https://pub-4b983519ddf745f3b60c95e8c2218e71.r2.dev/Scotland_job_map_simplified.topo.json');
 
 const data = feature(topoData, topoData.objects.Scotland_job_map); 
 
