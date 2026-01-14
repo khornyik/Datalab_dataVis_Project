@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+  <head> 
+
+    <title> Climate Action </title> 
+    <link rel = "stylesheet" href = 'main.css'>
+    
+    
+  </head>
+
+
+  <body> 
+
+    <h1 id = 'main_title'> CLIMATE ACTION IMPACTS ON JOBS AND THE NHS </h1>
+
+    <div id = 'introduction'>
+
+      <p class = 'paragraph'> Climate policy is often framed as a cost. 
+        However, data from the UK Co-benefits Atlas shows that actions to reduce emissions are predicted to also generate non-trivial benefits both for public health and employment. 
+        This project explores how climate action can simultaneously reduce pressure on the NHS and create green jobs — and how these benefits are distributed across communities. 
+      </p>
+    </div>
+
+
+    <div id = 'section1'> 
+      <h2 class = 'title'> 
+        Section 1 — Climate Action Health-related Savings Across the UK 
+      </h2>
+      <h3 class = 'subtitle'> 
+        Health is One of the Largest Co-Benefits of Climate Action 
+      </h3>
+
+      <p class = 'paragraph'> 
+        Reaching net zero by 2050 is projected to generate substantial health-related savings across every region of the UK. 
+        These health-related savings come from reduced air pollution, warmer homes, more physical activity, and healthier diets — all of which lower the risk of chronic disease and reduce hospital admissions. 
+      </p>   
+    </div>
+
+
+    <div id = 'uk_filters'>
+      <button id = 'filter_aq' type = 'button'> Air Quality  </button>
+      <button id = 'filter_damp' type = 'button'> Dampness  </button>
+      <button id = 'filter_dc' type = 'button'> Diet Change  </button>
+      <button id = 'filter_ec' type = 'button'> Excess Cold  </button>
+      <button id = 'filter_eh' type = 'button'> Excess Heat  </button>
+      <button id = 'filter_pa' type = 'button'> Physical Activity  </button>
+      <button id = 'filter_sum' type = 'button'> Sum </button>
+    </div>
+
+    
+
+    <div id = 'uk_map_and_text'>
+      <div id = 'map_uk_combined'>
+        <div id = 'map_uk'> </div>
+        <h4 class = 'figure_legend'> 
+          Figure 1 — UK Map: Health-Related Co-benefits of Climate Action by 2050 
+        </h4>
+      </div>
+      
+      <div id = 'figure_description'> 
+        
+        <ul>
+          <li> This map shows the cumulative health-related savings from climate action between 2025 and 2050.</li>
+          <li> The different types of health improvements can be viewed using the toggles. </li>
+          <li> Improvements in air quality, physical activity, housing conditions, and diet all represent issues which can result in major, long-term, reductions in NHS demand. </li>
+          <li> This is because it is likely that NHS monetary savings in these areas is explained by a reduced demand for care. </li>
+        </ul> 
+
+
+        <h4 class = 'summary'> Section Summary: </h4>
+        <p class = 'paragraph'> 
+          Climate action functions as long-term preventative healthcare, reducing avoidable NHS demand rather than simply shifting costs elsewhere.
+        </p>
+      </div> 
+    </div>
+
+    <div id = 'transition_text'>
+      <p> From now, and for the rest of the analysis, we focus on data specific to Scotland. 
+        We observe trends between the climate action co-benefits, health deprivation, employment deprivation, and job creation due to the climate action plan.</p>
+    </div>
+
+    <div id = 'section2'> 
+      <h2 class = 'title'> Section 2 — Health Savings, Deprivation, and Inequality in Scotland </h2>
+      <h3 class = 'subtitle'> Where Climate Action Helps — and Where More Support Is Needed </h3>
+
+      <p class = 'paragraph'> 
+        This map shows the cumulative health savings per small area from climate action, alongside local measures of deprivation and health. 
+        Users can explore how benefits evolve over time and compare them with indicators such as health deprivation (health domain rank), employment deprivation (employment domain rank), new jobs per working age population and total co-benefit. 
+      </p>
+    </div>
+
+
+    <div id = 'scotland_map_utils'>
+        
+      <div id = 'slider-box'>
+
+        <p> <i> Use the slider to view by year. <br>
+          Use the animate button to view over time. <br> 
+          Click a small area to see more information. </i>
+        </p> 
+
+        <label id = 'year'> </label>
+        <input id = 'slider' type = 'range' min = 0 max = 5 value = '0' />
+      </div>
+
+      <div id = 'button-box'>
+        <button id = 'animate_button' type = 'button'> Play Animation </button>
+      </div>
+
+    </div>
+    
+
+    <div id = 'legend'> </div>
+
+    <div id = 'map'>
+      <div id = 'area_info' style = 'display: none;'> </div>
+    </div>
+
+    
+    <div class = 'figure_description'> 
+      <h4 class = 'figure_legend'> 
+        Figure 2 — Scotland Map: Health Savings and Deprivation Over Time 
+      </h4>
+      <p class = 'paragraph'> 
+        The health domain rank describes the health deprivation score of the small area - 1 being the most deprived.
+        Similarly, the job domain rank describes the employment deprivation score of the small area - 1 being the most deprived.
+        Areas with poorer health should have the greatest potential to benefit from preventative climate interventions (due to the health-related savings), yet projected savings remain lower in many of the more deprived communities. 
+      </p>
+
+      <h4 class = 'section_summary'> Section Summary: </h4>
+      <p class = 'paragraph'> 
+        Climate action can reduce health inequalities — but only if investment is targeted to communities with the greatest health burden. 
+      </p>
+    </div>
+
+    <div id = 'section3'> 
+      <h2 class = 'title'> Section 3 — What Drives Health Savings? </h2>
+      <h3 class = 'subtitle'> Active Travel and Clean Air Deliver the Largest Health Gains </h3> 
+
+      <p class = 'paragraph'> 
+        Most projected health savings come from increased physical activity and improved air quality, with minor benefits from temperature and dampness related factors. 
+        This forecasting highlights the importance of transport, urban design, and the further development of walkable neighbourhoods as public-health interventions in the future. 
+      </p>
+
+      <div id = 'section3_image'>
+        <img src = "data/images/f4.png" alt = "image loading failed" id = 'figure3'>
+
+        <h4 class = 'figure_legend'> Figure 3 — Distribution of Health Savings by Co-benefit Type (Scotland) </h4>
+      </div>  
+
+      <h4 class = 'summary'> Policy relevance: </h4>
+      <p class = 'paragraph'> Investment in active travel infrastructure and cleaner transport can deliver health returns alongside emissions reductions. 
+      </p>
+    </div>
+
+   
+    <div id = 'section4'> 
+      <h2 class = 'title'> Section 4 — Inequality and Health Benefits </h2>
+      <h3 class = 'subtitle'> Deprivation and Health Savings Move in Opposite Directions </h3>
+
+      <p class = 'paragraph'> 
+        When health savings are compared with deprivation levels, a clear pattern emerges: less deprived areas receive higher projected health savings. 
+        At the same time, the NHS burden is highest in the most deprived communities, meaning that targeted climate investment could generate even greater healthcare savings where they are most needed. 
+      </p>
+
+      <div id = 'section4_image'>
+        <a href = 'extrainfo.html' target = '_blank' rel = 'noopener noreferrer'> 
+          <img src = "data/images/f2.png" alt = "image loading failed" id = 'figure4'> 
+        </a>
+
+        <h4 class = 'figure_legend'> 
+          Figure 4 — Total health savings of most and least deprived areas
+        </h4>
+      </div>
+
+      <ul>
+        <li> Less deprived areas receive substantially higher projected health savings - despite less health burdens. </li>
+        <li> This suggests that a more targeted climate investment needs to be made to deliver the greatest NHS savings in communities with the highest health needs. </li>
+        <li> Hence, more targeted climate plans could result in a reduction of the deprivation gap, as well as increased overall climate action benefits. </li>
+        <li> Click the chart for extra detail. </li>
+      </ul>
+
+      <h4 class = 'summary'> Section Summary: </h4>
+      <p class = 'paragraph'> 
+        The communities with the highest health needs are not yet receiving the greatest preventative benefits. 
+      </p>
+    </div>
+
+
+    <div id = 'section5'> 
+      <h2 class = 'title'> Section 5 — Job creation from Climate Action </h2>
+      <h3 class = 'subtitle'> Green Job Growth Reaches Deprived and Affluent Areas Alike </h3>
+
+      <p class = 'paragraph'> 
+        Alongside health improvements, climate policies also drive employment growth in low-carbon industries. 
+        Projections show similar levels of green job growth per capita in both more and less deprived areas, 
+        indicating that the current climate action plan can lead to increased opportunities for all communities. 
+      </p>
+      
+      <div id = 'section5_image'>
+        <img src = "data/images/f3.png" alt = "image loading failed" id = 'figure5'>
+
+        <h4 class = 'figure_legend'>
+          Figure 5 — Green Job Growth by Deprivation Group
+        </h4>
+      </div>
+
+      <ul>
+        <li> Deprivation rank is the measure describing the deprivation score of the small area - 1 being the most deprived. </li>
+        <li> Green job growth is projected to be similar across both more and less deprived areas, indicating that climate investment supports local economies broadly. </li>
+        <li> This suggests climate action can deliver economic opportunity alongside health benefits in all communities. </li>
+      </ul>
+
+      <h4 class = 'summary'> Section Summary: </h4>
+
+      <p class = 'paragraph'> 
+        Climate action not only ensures health intervention benefits — it also provides economic growth and job opportunities. 
+      </p>
+    </div>
+
+    <div id = 'section6'> 
+      <h2 class = 'title'> Section 6 — The Combined Opportunity </h2>
+      <h3 class = 'subtitle'> One Policy, Multiple Benefits </h3>
+
+      <p class = 'paragraph'> 
+        Climate action offers a rare opportunity to deliver three public goals simultaneously: reduce NHS pressure, improve population health, support local employment. 
+        With more targeted climate action goals toward high-need communities, the climate policy has the possibility to help narrow long-standing health inequalities between communities. 
+      </p>
+
+    </div>
+
+    <div id = 'methods'> 
+      <h2 class = 'title'> Methods </h2>
+
+      <ul>
+        <li> Health co-benefits are modelled estimates from the UK Co-benefits Atlas, representing monetised improvements in health outcomes linked to net-zero pathways. </li>
+        <li> SIMD 2020 indicators were used to contextualise deprivation and health burden at small-area level. </li>
+        <li> Green jobs projections were aggregated to match available geographic boundaries. </li>
+        <li> All savings are cumulative estimates between 2025 and 2050 and should be interpreted as indicative rather than exact forecasts. </li>
+      </ul>
+
+      <h2 class = 'title'> Data Sources </h2>
+
+      <ul>
+        <li> UK Co-Benefits Atlas - University of Edinburgh </li>
+        <li> Scottish Index of Multiple Deprivation 2020v2 (SIMD 2020v2) - Scottish Government </li>
+        <li> Estimates of green jobs, industry approach UK: 2025 - ONS </li>
+      </ul>
+    
+    </div>
+
+
+    <script type = 'module' src = 'dataVis.js'> </script> 
+  </body> 
+</html>

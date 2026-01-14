@@ -1,0 +1,172 @@
+#main_title {
+  font-size: 35px;
+  color: #06885a;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+  color: #333;
+  margin: 25px;
+  padding: 25px;
+}
+
+
+.area {
+  stroke-width: 0.5;
+}
+
+.area_uk {
+  stroke-width: 0.5;
+}
+
+#map { 
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+#map_uk {
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+}
+
+#map_uk_combined {
+  float: left;
+}
+
+
+.hovered {
+  fill: yellow;
+}
+
+.clicked {
+  stroke: red;
+  stroke-width: 0.5;
+}
+
+#slider-box {
+  display: inline-block;
+}
+
+#button-box {
+  display: inline-block;
+}
+
+#scotland_map_utils {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+
+#uk_filters {
+  text-align: left;
+}  
+
+#area_info {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  background-color: whitesmoke;
+  text-align: left;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  white-space: normal;
+  pointer-events: none;
+  font-size: 11px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 10px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.title {
+  text-align:  left;
+  font-size: 25px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.subtitle { 
+  margin-top: -15px;
+  padding-top: -15px;
+}
+
+.paragraph { 
+  text-align: justify;
+  margin-top: -15px;
+  padding-top: -15px;
+}
+
+#section2 {
+  clear: both;
+}
+
+
+#figure3 {
+  width: 725px;
+  height: 400px;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+#section3_image {
+  float: left;
+}
+
+#section3 {
+  clear: both;
+}
+
+#section4 {
+  clear: both;
+}
+
+#figure4 {
+  width: 550x;
+  height: 375px;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+#section4_image {
+  float: left;
+}
+
+#section5 {
+  clear: both;
+}
+
+#figure5 {
+  width: 650px;
+  height: 550px;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+#section5_image {
+  float: right;
+}
+
+#section6 {
+  clear: both;
+}
+
+.figure_legend {
+  margin-top: -5px;
+  padding-top: -5px;
+}
+
+#transition_text {
+  clear: both;
+}
