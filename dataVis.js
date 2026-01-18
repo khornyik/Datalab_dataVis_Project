@@ -326,7 +326,7 @@ function filterBy(yearIndex) {
     x: 20,
     y: 20,
     width: 175,
-    title: `${year} co-benefits`
+    title: `${year} co-benefits (£, million)`
   });
 }
 
@@ -378,7 +378,7 @@ function animate(anim_years) {
       x: 20,
       y: 20,
       width: 175,
-      title: `${year} co-benefits`
+      title: `${year} co-benefits (£, million)`
     });
 
     // move onto next year
@@ -414,7 +414,7 @@ function filterUK(property) {
     x: 20,
     y: 20,
     width: 175,
-    title: `${property} co-benefits`
+    title: `${property} co-benefits (£, million)`
   });
 };
 
